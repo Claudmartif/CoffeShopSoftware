@@ -1,0 +1,103 @@
+body { font-family: system-ui, Arial, sans-serif; }
+.card img { object-fit: cover; height: 100%; }
+
+/* Colores por categoría */
+.cat-cafes {
+  background-color: #cf8d4e; /* marrón claro */
+  border-radius: 8px;
+  border-style: dotted;
+  padding: 10px;
+}
+
+.cat-bebidas {
+  background-color: #99c3eb; /* azul suave */
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.cat-comida {
+  background-color: #42830d; /* verde suave */
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Estilo para títulos desplegables */
+.category-title {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.category-title:hover {
+  opacity: 0.8;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Animación suave para abrir/cerrar */
+.section-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+/* Cuando la sección está abierta */
+.section-open {
+  max-height: 1000px; /* suficiente para que todo se vea */
+}
+
+/* Bordes suaves y sombreados */
+.category-wrapper {
+  border: 2px solid #00534cb4;
+  border-radius: 10px;
+  padding: 8px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+/* Cuando el mouse pasa por encima */
+.category-title:hover {
+  transform: scale(1.02);
+}
+
+/* Botones más estilizados */
+.btn {
+  border-radius: 10px !important;
+  border: 2px solid transparent !important;
+  transition: 0.2s ease !important;
+}
+
+/* Efecto hover */
+.btn:hover {
+  transform: scale(1.05);
+  border-color: #444 !important;
+}
+
+/* Botones de "Agregar" */
+.btn-success {
+  background-color: #056f77 !important;
+}
+
+/* Hover de botones */
+.btn-success:hover {
+  background-color: #49e2c1 !important;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px;
+  border: 3px solid #189187;
+  border-radius: 12px;
+  width: 100%;
+  background: #ffffff00;
+  margin: 20px 0;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
